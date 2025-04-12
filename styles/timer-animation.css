@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:900');
+
+:root {
+  --dark: #ff7e5e;
+  --light: #ff7e5e;
+  --background: #FFCF5E;
+}
+
+html, body {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+#attribution {
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  color: #ff7e5e;
+  z-index: 100;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#attribution a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+.wrapper {
+  font-family: 'Source Code Pro', monospace;
+  font-weight: 900;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: var(--background);
+}
+
+.timer {
+  position: relative;
+  box-shadow: 0px 50px 0px 100px #FF5E8F;
+  border: 20px solid var(--dark);
+  border-style: none none solid;
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
+  color: var(--light);
+  display: flex;
+  justify-content: center;
+  width: 400px;
+  margin: 0 auto;
+  font-size: 100px;
+  
+  animation: noborder 60s 1, alarm 1s infinite;
+  animation-delay: 0s, 60s;
+  animation-fill-mode: forwards;
+}
+
+.timer div#min,
+.timer #sectens,
+.timer #secones {
+  text-align: center;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.timer span:not(:first-child) {
+  position: absolute;
+  top: 150px;
+  left: 0px;
+}
+
+.timer #colon {
+  position: relative;
+}
+
+.timer #min {
+  display: inline-block;
+}
+
+.timer #min span#min_1 {
+  animation: popout 1s 1;
+  animation-delay: 0s;
+  animation-fill-mode: forwards;
+}
+
+.timer #min span#min_0 {
+  animation: popin 1s 1;
+  animation-delay: 0s;
+  animation-fill-mode: forwards;
+}
+
+.timer #sectens span#sectens_6 {
+  animation: popout 1s 1;
+  animation-delay: 0s;
+  animation-fill-mode: forwards;
+}
+
+.timer #sectens span#sectens_5,
+.timer #sectens span#sectens_4,
+.timer #sectens span#sectens_3,
+.timer #sectens span#sectens_2,
+.timer #sectens span#sectens_1,
+.timer #sectens span#sectens_0 {
+  animation: popin 1s 1s 1;
+  animation-delay: 0.1s;
+  animation-fill-mode: forwards;
+}
+
+.timer #secones span#secones_60 {
+  animation: popout 1s 1;
+  animation-delay: 0s;
+  animation-fill-mode: forwards;
+}
+
+.timer #secones span#secones_59,
+.timer #secones span#secones_58,
+.timer #secones span#secones_57 {
+  animation: popin 1s 1s 1;
+  animation-delay: 0.1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes popout {
+  0% {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-150px) scale(.8);
+    opacity: 0;
+  }
+}
+
+@keyframes popin {
+  0% {
+    transform: translateY(0) scale(.8);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-150px) scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes popout2 {
+  0% {
+    transform: translateY(-150px) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-300px) scale(.8);
+    opacity: 0;
+  }
+}
+
+@keyframes alarm {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  10% {
+    transform: rotateZ(3deg);
+  }
+  30% {
+    transform: rotateZ(-3deg);
+  }
+  45% {
+    transform: rotateZ(2deg);
+  }
+  60% {
+    transform: rotateZ(-6deg);
+  }
+  80% {
+    transform: rotateZ(10deg);
+  }
+  100% {
+    transform: rotateZ(0deg);
+  }
+}
+
+@keyframes noborder {
+  from {
+    border: 5px solid var(--dark);
+  }
+  to {
+    border: 5px solid white;
+  }
+}

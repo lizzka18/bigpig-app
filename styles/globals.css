@@ -1,3 +1,7 @@
+/* Включите анимацию в ваш основной CSS файл */
+@import './timer-animation.css';
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+

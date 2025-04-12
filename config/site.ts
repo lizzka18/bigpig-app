@@ -1,15 +1,19 @@
 export type SiteConfig = typeof siteConfig;
 
 export const siteConfig = {
-  name: "Next.js + HeroUI",
-  description: "Make beautiful websites regardless of your design experience.",
+  name: "Шмель",
+  description: "Сайт про Владислава Жмилевского.",
   navItems: [
     {
-      label: "Home",
+      label: "Главная",
       href: "/",
     },
     {
-      label: "Docs",
+      label: "Аукцион",
+      href: "/auction",
+    },
+    {
+      label: "Стрим",
       href: "/docs",
     },
     {
@@ -17,7 +21,7 @@ export const siteConfig = {
       href: "/pricing",
     },
     {
-      label: "Blog",
+      label: "Блог",
       href: "/blog",
     },
     {
@@ -27,37 +31,61 @@ export const siteConfig = {
   ],
   navMenuItems: [
     {
-      label: "Profile",
-      href: "/profile",
+      label: "Главная",
+      href: "/",
     },
     {
-      label: "Dashboard",
-      href: "/dashboard",
+      label: "Аукцион",
+      href: "/auction",
     },
     {
-      label: "Projects",
-      href: "/projects",
+      label: "Стрим",
+      href: "/docs",
     },
     {
-      label: "Team",
-      href: "/team",
+      label: "Pricing",
+      href: "/pricing",
     },
     {
-      label: "Calendar",
-      href: "/calendar",
+      label: "Блог",
+      href: "/blog",
     },
     {
-      label: "Settings",
-      href: "/settings",
+      label: "About",
+      href: "/about",
     },
-    {
-      label: "Help & Feedback",
-      href: "/help-feedback",
-    },
-    {
-      label: "Logout",
-      href: "/logout",
-    },
+    //{
+    //  label: "Profile",
+    //  href: "/profile",
+    //},
+    //{
+    //  label: "Dashboard",
+    //  href: "/dashboard",
+    //},
+    //{
+    //  label: "Projects",
+    //  href: "/projects",
+    //},
+    //{
+    //  label: "Team",
+    //  href: "/team",
+    //},
+    //{
+    //  label: "Calendar",
+    //  href: "/calendar",
+    //},
+    //{
+    //  label: "Settings",
+    //  href: "/settings",
+    //},
+    //{
+    //  label: "Help & Feedback",
+    //  href: "/help-feedback",
+    //},
+    //{
+    //  label: "Logout",
+    //  href: "/logout",
+    //},
   ],
   links: {
     github: "https://github.com/heroui-inc/heroui",

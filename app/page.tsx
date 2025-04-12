@@ -26,7 +26,7 @@ export default function Home() {
         <Link
           isExternal
           className={buttonStyles({
-            color: "primary",
+            color: "secondary",
             radius: "full",
             variant: "shadow",
           })}
