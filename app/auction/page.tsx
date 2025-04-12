@@ -1,8 +1,8 @@
-'use client';
+"use client"
 
-import { useState } from "react";
 import LotItem from "@/components/auction/LotItem";
 import Timer from "@/components/auction/Timer";
+import { useState } from "react";
 
 type Lot = {
   id: number;
