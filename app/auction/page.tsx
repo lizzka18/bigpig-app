@@ -28,7 +28,7 @@ export default function AuctionPage() {
   const sorted = [...lots].sort((a, b) => b.amount - a.amount);
 
   return (
-    <div className="min-h-screen bg-green-800 text-white p-4 grid grid-cols-3 gap-4">
+    <div className="w-full min-h-screen bg-green-800 text-white p-4 grid grid-cols-3 gap-4">
       {/* Лоты */}
       <div className="col-span-2 space-y-2">
         {sorted.map((lot, i) => (

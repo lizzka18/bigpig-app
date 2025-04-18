@@ -5,3 +5,78 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+    font-family: "Sexsmith";
+    src: url("./font_sexsmith.otf");
+ }
+
+.zfont {
+    font-family: "Sexsmith", sans-serif;
+    font-weight: normal;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 4em;
+    line-height: 100%;
+    margin: 0;
+    margin-top: 0.5em;
+}
+
+.zbody {
+    line-height: 150%;
+}
+
+.main-gif {
+    margin-top: 3em;
+    margin-top: 3em;
+    width: 25vw;
+    margin-bottom: 2em;
+    margin: 1em auto 3em;
+}
+
+.header-logo {
+    display: flex;
+    align-items: center;
+    display: none;
+}
+
+.header-logo .zfont {
+    text-decoration: none;
+    /* color: #000; */
+    margin: 0 8px;
+    /* font-weight: bold; */
+    translate: 0 2px;
+    font-size: 36px;
+    letter-spacing: 2px;
+    margin: 0px 12px;
+    opacity: 0.5;
+}
+
+.dark .header-logo .zfont {
+    /* color: red; */
+}
+
+header {
+    padding: 0 !important; 
+    /* border-bottom: 1px solid red; */
+}
+
+.list-links a {
+    /* background: rgb(128, 128, 128); */
+    width: 100%;
+    padding: 2em 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .5em;
+    color: var(--body);
+    text-align: center;
+}
+.list-links a {}
+.list-links a:hover {
+    background-color: rgba(0, 0, 0, 0.075);
+    padding-bottom: 2em;
+}
+
+.dark .list-links a:hover {
+    background-color: rgba(1, 1, 1, 0.363);
+}
